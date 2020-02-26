@@ -1,0 +1,55 @@
+* {
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #444444;
+}
+
+.box{
+    background-color: rgb(238,174,202);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 60px;
+    margin: 50px;
+}
+
+.box:hover {
+    animation: myAnimation;
+    animation-duration: 10s;
+}
+
+/* seizure warning!
+    @keyframes myAnimation{
+    0%{background-color: white; left: 300px; top: 0px;}
+    25%{background-color: rgb(228, 26, 167); left: 600px; top: 300px;}
+    50%{background-color: salmon; left: 300px; top: 600px;}
+    75%{background-color: cornflowerblue; left: 600px; top: 300px;}
+    100%{background-color: white; left: 300px; top: 0px;}
+} can I make it do something when I'm done with the animation? could make a maze game with this*/
+
+@keyframes myAnimation{
+    0%{background-color: white; left: 0px; top: 0px;}
+    25%{background-color: rgb(228, 26, 167); left: 300px; top: 0px;}
+    50%{background-color: salmon; left: 300px; top: 300px;}
+    75%{background-color: cornflowerblue; left: 0px; top: 300px;}
+    100%{background-image: url('https://4.bp.blogspot.com/-mjP73OYNCP4/VRTBHC1GK7I/AAAAAAAAA-U/WlI-tM0bLj8/s1600/img3.png'); transition: all ease 7s;}
+}
+
+.button {
+    font-family: "Gill Sans", sans-serif;
+    color: blueviolet;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 20%;
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.button:hover {
+    background: linear-gradient(90deg, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 100%);
+}
