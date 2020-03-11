@@ -30,14 +30,14 @@ body {
     50%{background-color: salmon; left: 300px; top: 600px;}
     75%{background-color: cornflowerblue; left: 600px; top: 300px;}
     100%{background-color: white; left: 300px; top: 0px;}
-} can I make it do something when I'm done with the animation? could make a maze game with this*/
+} can I make it do something when I'm done with the animation? could make a maze game with this. i want to add am image afterwards*/
 
 @keyframes myAnimation{
     0%{background-color: white; left: 0px; top: 0px;}
     25%{background-color: rgb(228, 26, 167); left: 300px; top: 0px;}
     50%{background-color: salmon; left: 300px; top: 300px;}
     75%{background-color: cornflowerblue; left: 0px; top: 300px;}
-    100%{background-image: url('https://4.bp.blogspot.com/-mjP73OYNCP4/VRTBHC1GK7I/AAAAAAAAA-U/WlI-tM0bLj8/s1600/img3.png'); transition: all ease 7s;}
+    100%{background-color: white; left: 0px; top: 0px;}
 }
 
 .button {
