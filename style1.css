@@ -10,6 +10,7 @@ body, html{
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
+    scroll-behavior: smooth;
 }
 
 .pimg1{
@@ -18,7 +19,7 @@ body, html{
     z-index: -1;
     margin-top: -15%;
     height: 120vh;
-    width: 100vw;
+    width: 100%;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -50,13 +51,6 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 40%;
-    /*min-height: 8vh;
-    font-family: monospace;
-    padding-right: 10%;
-    text-align:right;
-    margin-right: 0;
-    margin-left: auto;
-    margin-bottom: -140px; */
 }
 
 .navLinks li{
@@ -78,7 +72,7 @@ nav{
 .burger div{
     width: 25px;
     height: 2px;
-    background-color: cornsilk;
+    background-color: black;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -95,7 +89,7 @@ nav{
     }
     .navLinks{
         position: fixed;
-        /* position: absolute; */
+        text-decoration: underline;
         right: 0px;
         height: 92vh;
         top: 8vh;
