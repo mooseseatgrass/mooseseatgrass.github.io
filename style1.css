@@ -16,10 +16,15 @@ body, html{
     background-image: url("DSC_0938-min.jpg");
     z-index: -1;
     margin-top: -15%;
-    height: 120vh;
+    height: 120%;
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
+}
+/* percent worked better than vw. was having issues with overflow to the right */
+
+.pimg2{
+    background-image: url();
 }
 
 ul li a:hover{
@@ -40,6 +45,7 @@ nav{
     position: sticky;
     top: 0;
 }
+/* having issues with sticky only going down so far*/
 
 .logoImg{
     height: 10vh;
