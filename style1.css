@@ -143,6 +143,10 @@ a:hover{
     body{
         overflow-x: hidden;
     }
+    .section{
+        font-size: 1.5vh;
+        text-align: center;
+    }
     .navLinks{
         position: fixed;
         text-decoration: underline;
