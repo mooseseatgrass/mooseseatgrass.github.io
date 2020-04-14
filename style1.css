@@ -8,42 +8,76 @@ body, html{
     height: 100%;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    line-height: 1.8em;
+    line-height: 2.5em;
     scroll-behavior: smooth;
 }
 
+.text1{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+
+#contactMe{
+    font-size: 3vh;
+}
+
+h1{
+    font-size: 8vh;
+    font-family: monospace;
+}
 .pimg1{
     background-image: url("DSC_0938-min.jpg");
+    opacity: 0.9;
     z-index: -1;
-    margin-top: -15%;
-    height: 120%;
+    height: 100%;
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
 }
 /* percent worked better than vw. was having issues with overflow to the right */
+.pimg2, .pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .pimg2{
-    background-image: url();
+    background-image: url("keyboard.jpg");
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url("board.jpg");
+    min-height: 400px;
 }
 
 ul li a:hover{
-    color :rgb(76, 0, 255);
+    color: #4A9CE8;
 }
 
 nav{
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    opacity: .5;
-    background-color: rgb(161, 156, 156);
+    opacity: .7;
+    background-color: #ddd;
     min-height: 8vh;
     align-items: center;
     font-family: monospace;
     padding-left: 10%;
     padding-right: 10%;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
+    transition: top 0.6s ease-in-out;
 }
 /* having issues with sticky only going down so far*/
 
@@ -52,6 +86,14 @@ nav{
     padding-top: 10px;
 }
 
+a {
+    font-size: 3vh;
+    color: #ddd;
+}
+
+a:hover{
+    color: #4A9CE8
+}
 
 .navLinks{
     display: flex;
@@ -63,11 +105,19 @@ nav{
     list-style: none;
 }
 .navLinks a{
-    color: rgb(0, 0, 0);
+    color: #1c2125;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 15px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+    background-color: #1c2125;
+    color: #ddd;
+    font-size: 2.5vh;
 }
 
 .burger{
@@ -99,7 +149,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: rgb(161, 156, 156);
+        background-color: #ddd;
         display: flex;
         flex-direction: column;
         align-items: center;

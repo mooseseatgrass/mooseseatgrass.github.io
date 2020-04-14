@@ -1,3 +1,14 @@
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+}   else {
+    document.getElementById("navbar").style.top = "-100%";
+}
+    prevScrollpos = currentScrollPos;
+}
+
 const navSlide = () => {
     const burger = document.querySelector(`.burger`);
     const nav = document.querySelector(`.navLinks`);
@@ -6,6 +17,7 @@ const navSlide = () => {
 
     burger.addEventListener(`click`, () =>{
         nav.classList.toggle('nav-active');
+// need to add off click besides menu x
 
     //animate links
     navLinks.forEach((link, index)=>{
@@ -21,3 +33,4 @@ const navSlide = () => {
 }
 
 navSlide();
+
