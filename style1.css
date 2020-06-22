@@ -12,6 +12,26 @@ body, html{
     scroll-behavior: smooth;
 }
 
+#aboutMe {
+    display: grid;
+    grid-template-rows: 20% auto;
+    grid-template-columns: 20% auto;
+    /* grid-template-areas:
+    "header header"
+    "text pic"; */
+}
+
+.head {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+#profilepic {
+    max-height: 30vh;
+    border-radius: 50%;
+}
+
 .text1{
     position: absolute;
     top: 40%;
@@ -89,6 +109,7 @@ nav{
 a {
     font-size: 3vh;
     color: #ddd;
+    text-decoration: none;
 }
 
 a:hover{
@@ -106,7 +127,6 @@ a:hover{
 }
 .navLinks a{
     color: #1c2125;
-    text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 15px;
